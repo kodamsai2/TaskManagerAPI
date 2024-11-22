@@ -36,7 +36,7 @@ tasksRoutes.post('/', (req, res) => {
 
 //Delete a task by its ID.
 tasksRoutes.delete('/:taskId', (req, res) => {
-    let allTasks = tasksData.tasks;
+    let allTasks = tasksData
     let tasksDataModified;
     let taskIdPassed = req.params.taskId;
     let writepath = path.join(__dirname, '..', 'tasks.json');
